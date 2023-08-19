@@ -1,0 +1,7 @@
+.header-home {
+  @include flex-column;
+}
+
+.activeNetwork {
+  background-color: $color-hover-grey;
+}

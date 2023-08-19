@@ -1,0 +1,65 @@
+.hero {
+  height: 27.2rem;
+  background-image: url(/src/assets/backgroun_pattern.svg);
+  background-color: #131313;
+  padding: 2rem;
+  padding-top: 6rem;
+  color: $color-dropdown;
+  position: relative;
+
+  &__search-container {
+    @include flex-column;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .search-bar {
+      background-color: $color-dropdown;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 60%;
+      @include flex-align-center;
+
+      input {
+        margin-left: 1rem;
+        height: 3.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px;
+        border-radius: 8px;
+
+        &:focus {
+          outline: 1px solid $color-border-grey;
+        }
+      }
+
+      .search-btn {
+        background-color: $color-navy-blue;
+        padding: 8px;
+        margin-left: 10px;
+        border-radius: 8px;
+        height: 3.5rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($color-navy-blue, 8%);
+        }
+
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__stats-container {
+    @include absCenter;
+    width: 97vw;
+    height: 20rem;
+    background-color: $color-dropdown;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}

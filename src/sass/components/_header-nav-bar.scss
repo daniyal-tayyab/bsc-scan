@@ -1,0 +1,52 @@
+.header-nav {
+  @include space-between-center;
+  padding: 1.2rem 1.8rem;
+  position: relative;
+  margin-top: 5rem;
+
+  &__logo {
+    img {
+      width: 14rem;
+    }
+  }
+
+  &__navigation {
+    &__list {
+      display: flex;
+      gap: 2rem;
+
+      li {
+        text-decoration: none;
+        text-transform: capitalize;
+        position: relative;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  &__mobile-menu {
+    @include align-center;
+
+    .hamburger {
+      padding: 5px;
+      border: 1px solid $color-border-grey;
+      border-radius: 7px;
+      margin-left: 1rem;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 1.8rem;
+  }
+}

@@ -1,0 +1,60 @@
+.status-bar {
+  @include space-between-center;
+  border-bottom: 1px solid $color-border-grey;
+  padding: 1.4rem 1.8rem;
+  max-height: 5rem;
+  background-color: $color-dropdown;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  &__bar {
+    display: flex;
+    gap: 10px;
+
+    &--right {
+      @include flex-align-center;
+
+      img {
+        width: 3rem;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__network-tab {
+    &--tab {
+      border: 1px solid $color-border-grey;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        background-color: $color-hover-grey;
+      }
+
+      .network-dropdown {
+        position: absolute;
+        top: 41px;
+        right: 2px;
+        width: 16rem;
+        height: 13rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 1rem;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
