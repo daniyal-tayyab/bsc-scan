@@ -51,15 +51,114 @@
           font-size: 2rem;
         }
       }
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
     }
   }
 
   &__stats-container {
     @include absCenter;
     width: 97vw;
-    height: 20rem;
     background-color: $color-dropdown;
     border-radius: 10px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+    display: flex;
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      color: #000;
+      flex-grow: 1;
+
+      .bnb-price {
+        border-bottom: 1px solid $color-border-grey;
+        border-right: 1px solid $color-border-grey;
+
+        @media (max-width: 500px) {
+          border: none;
+        }
+      }
+
+      .transactions {
+        border-bottom: 1px solid $color-border-grey;
+        border-right: 1px solid $color-border-grey;
+
+        @media (max-width: 500px) {
+          border: none;
+        }
+      }
+
+      .bnb-market {
+        border-right: 1px solid $color-border-grey;
+        @media (max-width: 500px) {
+          border: none;
+        }
+      }
+
+      .latest-block {
+        border-right: 1px solid $color-border-grey;
+        @media (max-width: 500px) {
+          border: none;
+        }
+      }
+
+      @media (max-width: 500px) {
+        grid-template-columns: auto;
+      }
+    }
+    .chart-container {
+      color: #000;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-left: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        margin-top: 4rem;
+      }
+
+      @media (min-width: 1500px) {
+        width: 500px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.common {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 2rem;
+
+  img {
+    width: 24px;
+  }
+
+  .right {
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 5px;
+      color: $color-grey-font;
+    }
+
+    span {
+      font-size: 1.5rem;
+
+      &:last-child {
+        font-size: 1.4rem;
+      }
+    }
   }
 }

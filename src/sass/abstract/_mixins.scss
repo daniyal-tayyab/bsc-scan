@@ -3,6 +3,14 @@
   top: 120%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 800px) {
+    top: 145%;
+  }
+
+  @media (max-width: 500px) {
+    top: 170%;
+  }
 }
 
 @mixin flex-column {
@@ -32,6 +40,7 @@
     navy-blue: $color-navy-blue,
     red: $color-red,
     dark-blue: $color-dark-blue,
+    green: $color-green,
   );
 
   @each $key, $value in $colors {

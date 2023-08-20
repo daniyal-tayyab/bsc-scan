@@ -14,6 +14,7 @@ const Drawer = styled.div`
   opacity: ${(props) => (props.open ? "1" : "0")};
 
   transition: all 0.2s;
+  overflow: auto;
 `;
 const CustomAccordion = styled(Accordion)`
   border: none !important;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import logo from "../../assets/logo.svg";
 import navList from "../../utils/nav";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { BiChevronDown } from "react-icons/bi";
 import { FcMenu } from "react-icons/fc";
@@ -23,7 +23,7 @@ const Container = styled.div`
   transition: all 0.2s;
 
   @media (max-width: 1000px) {
-    margin-bottom: ${(props) => (props.open ? "50rem" : "0")};
+    margin-bottom: ${(props) => (props.open ? "43rem" : "0")};
   }
 `;
 
@@ -37,7 +37,9 @@ const HeaderNav = () => {
   return (
     <Container className="header-nav" open={showDrawer}>
       <div className="header-nav__logo">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <nav className="header-nav__navigation">
         <ul className="header-nav__navigation__list">

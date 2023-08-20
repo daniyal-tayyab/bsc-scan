@@ -1,0 +1,134 @@
+.footer {
+  background-color: $color-light-grey;
+  padding: 2rem;
+  @include flex-column;
+
+  &__top {
+    padding: 2rem 0;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+
+    @include space-between-center;
+    border-bottom: 1px solid $color-border-grey;
+
+    &__social,
+    &__back-to-top {
+      @include align-center;
+      gap: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-navy-blue;
+      }
+
+      svg {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  &__main {
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+
+    &__company-info {
+      @include flex-column;
+
+      .power-by {
+        @include align-center;
+        font-size: 1.7rem;
+
+        img {
+          width: 26px;
+          margin-right: 1rem;
+        }
+      }
+
+      .desc {
+        font-size: 1.3rem;
+        color: $color-grey-font;
+        margin-top: 1rem;
+      }
+      .add-network {
+        @include align-center;
+        padding: 5px;
+        background-color: $color-border-grey;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        width: fit-content;
+        margin-top: 1.5rem;
+        cursor: pointer;
+
+        img {
+          width: 20px;
+          margin-right: 1rem;
+        }
+
+        &:hover {
+          background-color: darken($color-border-grey, 8%);
+        }
+      }
+    }
+
+    &__useful-links {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      flex-grow: 1;
+
+      .column {
+        @include flex-column;
+
+        p {
+          font-size: 1.6rem;
+          margin-bottom: 1.5rem;
+        }
+
+        span {
+          cursor: pointer;
+          font-size: 1.3rem;
+          color: $color-grey-font;
+          margin-bottom: 1rem;
+
+          &:hover {
+            color: $color-navy-blue;
+          }
+        }
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: auto auto;
+        row-gap: 2rem;
+      }
+    }
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    padding: 2rem 0;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+    @include space-between-center;
+    border-top: 1px solid $color-border-grey;
+
+    P {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+
+      svg {
+        color: $color-red;
+        font-size: 1.5rem;
+        margin-left: 5px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      row-gap: 1rem;
+      align-items: flex-start;
+    }
+  }
+}
