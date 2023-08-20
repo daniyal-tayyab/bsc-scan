@@ -231,7 +231,7 @@ const DrawerNav = ({ open }) => {
                 <div className="more-container__column">
                   <h3>Tools & Services</h3>
                   <p>
-                    Discover more of BscScan's tools and services in one place.
+                    Discover more of Tolchain's tools and services in one place.
                   </p>
                   <div className="sponsor">
                     <p>Sponsored</p>
@@ -293,10 +293,10 @@ const DrawerNav = ({ open }) => {
         <CustomDetails>
           <ul>
             <ListItem>
-              <Link to="/">Bsc Mainnet</Link>
+              <Link to="/">Tolchain Mainnet</Link>
             </ListItem>
             <ListItem>
-              <Link to="/">Bsc Testnet</Link>
+              <Link to="/">Tolchain Testnet</Link>
             </ListItem>
           </ul>
         </CustomDetails>

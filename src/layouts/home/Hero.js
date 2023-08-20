@@ -83,7 +83,7 @@ const Hero = () => {
           <div className="bnb-market common pt-20 pb-0">
             <img className="icon" src={marketCapIcon} alt="marketCapIcon" />
             <div className="right">
-              <h2>BNB MARKET CAP ON BSC</h2>
+              <h2>BNB MARKET CAP ON Tolchain</h2>
               <p>
                 <span>$5,247,178,344.00 </span>
                 <span className="col-grey">(24,148,466 BNB)</span>
@@ -107,7 +107,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="chart-container">
-          <h2>BSC TRANSACTION HISTORY IN 14 DAYS</h2>
+          <h2>Tolchain TRANSACTION HISTORY IN 14 DAYS</h2>
           <ApexChart />
         </div>
       </div>

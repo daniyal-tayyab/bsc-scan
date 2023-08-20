@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import styled from "styled-components";
 
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/Logo.png";
 import navList from "../../utils/nav";
 import { Link, NavLink } from "react-router-dom";
 
@@ -39,6 +39,7 @@ const HeaderNav = () => {
       <div className="header-nav__logo">
         <Link to="/">
           <img src={logo} alt="logo" />
+          <p>Tolchain</p>
         </Link>
       </div>
       <nav className="header-nav__navigation">

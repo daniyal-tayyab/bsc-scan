@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import gasIcon from "../../assets/gas-icon.png";
-import bngLogo from "../../assets/logo_small.svg";
+import bngLogo from "../../assets/Logo.png";
 
 import { ListItem, Seperator } from "./dropdowns/Blockchain";
 import { NavLink } from "react-router-dom";
@@ -43,13 +43,13 @@ const HeaderStatusBar = () => {
             <div className="network-dropdown">
               <ul>
                 <ListItem>
-                  <NavLink to="/">Bsc Mainnet</NavLink>
+                  <NavLink to="/">Tolchain Mainnet</NavLink>
                 </ListItem>
               </ul>
               <Seperator />
               <ul>
                 <ListItem>
-                  <NavLink to="/testnet">Bsc Testnet</NavLink>
+                  <NavLink to="/testnet">Tolchain Testnet</NavLink>
                 </ListItem>
                 <ListItem>
                   <NavLink to="/bnb-test-net">opBNB Testnet</NavLink>

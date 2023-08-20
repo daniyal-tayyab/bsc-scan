@@ -5,8 +5,13 @@
   margin-top: 5rem;
 
   &__logo {
+    a {
+      display: flex;
+      align-items: center;
+    }
     img {
-      width: 14rem;
+      width: 3rem;
+      margin-right: 1rem;
     }
   }
 

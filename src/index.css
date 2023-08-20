@@ -190,8 +190,13 @@ a:hover {
   position: relative;
   margin-top: 5rem;
 }
+.header-nav__logo a {
+  display: flex;
+  align-items: center;
+}
 .header-nav__logo img {
-  width: 14rem;
+  width: 3rem;
+  margin-right: 1rem;
 }
 .header-nav__navigation__list {
   display: flex;

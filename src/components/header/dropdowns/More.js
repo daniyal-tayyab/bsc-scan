@@ -12,7 +12,7 @@ const More = ({ title }) => {
         <div className="more-container">
           <div className="more-container__column">
             <h3>Tools & Services</h3>
-            <p>Discover more of BscScan's tools and services in one place.</p>
+            <p>Discover more of Tollcahain's tools and services in one place.</p>
             <div className="sponsor">
               <p>Sponsored</p>
               <img src={blockscan} alt="blockscan" />

@@ -4,7 +4,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiArrowToTop } from "react-icons/bi";
 import { AiFillHeart } from "react-icons/ai";
 
-import logo from "../assets/logo_small.svg";
+import logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
@@ -25,10 +25,10 @@ const Footer = () => {
       <div className="footer__main">
         <div className="footer__main__company-info">
           <p className="power-by">
-            <img src={logo} alt="logo" /> Powered by BNB Beacon Chain
+            <img src={logo} alt="logo" /> Powered by Tolchain
           </p>
           <p className="desc">
-            BscScan is a Block Explorer and Analytics Platform for BNB Smart
+            Tolchain is a Block Explorer and Analytics Platform for BNB Smart
             Chain.
           </p>
           <div className="add-network">
@@ -36,13 +36,13 @@ const Footer = () => {
               src="https://bscscan.com/images/svg/brands/metamask.svg"
               alt="network"
             />{" "}
-            Add BSC Network
+            Add Tolchain Network
           </div>
         </div>
         <div className="footer__main__useful-links">
           <div className="column">
             <p>Company</p>
-            <span>Delegate to BscScan</span>
+            <span>Delegate to Tolchain</span>
             <span>Brand Assets</span>
             <span>Contact Us</span>
             <span>Terms of Service</span>
@@ -53,7 +53,7 @@ const Footer = () => {
             <span>API Documentation</span>
             <span>Knowledge Base</span>
             <span>Network Status</span>
-            <span>Learn BSC</span>
+            <span>Learn Tolchain</span>
           </div>
           <div className="column">
             <p>Products & Services</p>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <p>BscScan © 2023 (BSC-D)</p>
+        <p>Tolchain © 2023</p>
         <p>
           Donations: 0x71c765...d8976f <AiFillHeart />
         </p>
