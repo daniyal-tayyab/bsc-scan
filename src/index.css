@@ -381,7 +381,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   .hero__stats-container {
-    top: 170%;
+    top: 185%;
   }
 }
 .hero__stats-container .stats-grid {
@@ -397,6 +397,7 @@ a:hover {
 @media (max-width: 500px) {
   .hero__stats-container .stats-grid .bnb-price {
     border: none;
+    border-bottom: 1px solid #e9ecef;
   }
 }
 .hero__stats-container .stats-grid .transactions {
@@ -406,6 +407,8 @@ a:hover {
 @media (max-width: 500px) {
   .hero__stats-container .stats-grid .transactions {
     border: none;
+    border-bottom: 1px solid #e9ecef;
+    margin-top: 2rem;
   }
 }
 .hero__stats-container .stats-grid .bnb-market {
@@ -414,6 +417,8 @@ a:hover {
 @media (max-width: 500px) {
   .hero__stats-container .stats-grid .bnb-market {
     border: none;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 2rem !important;
   }
 }
 .hero__stats-container .stats-grid .latest-block {
@@ -422,6 +427,8 @@ a:hover {
 @media (max-width: 500px) {
   .hero__stats-container .stats-grid .latest-block {
     border: none;
+    border-bottom: 1px solid #e9ecef;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 500px) {
@@ -486,17 +493,20 @@ a:hover {
   gap: 3rem;
 }
 .table-grid__left {
-  height: 100%;
   background-color: #fff;
   box-shadow: 0 0.5rem 1.2rem rgba(189, 197, 209, 0.2);
   border-radius: 10px;
 }
 .table-grid__right {
-  height: 100%;
   background-color: #fff;
   box-shadow: 0 0.5rem 1.2rem rgba(189, 197, 209, 0.2);
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .table-grid__right {
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 800px) {
   .table-grid {
@@ -516,7 +526,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   .table-grid {
-    margin-top: 46rem;
+    margin-top: 53rem;
     padding: 2rem 1rem;
   }
 }
