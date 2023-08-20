@@ -194,6 +194,10 @@ a:hover {
   display: flex;
   align-items: center;
 }
+.header-nav__logo a p {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
 .header-nav__logo img {
   width: 3rem;
   margin-right: 1rem;
